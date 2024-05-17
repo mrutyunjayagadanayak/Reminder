@@ -5,7 +5,7 @@ unit SoundAlarm;
 interface
 
 uses
-  Classes, SysUtils, crt, DateUtils, ExtCtrls, Dialogs;
+  Classes, SysUtils, crt, DateUtils, ExtCtrls, Dialogs,xlib;
 
 type
   TSoundThread = class (TThread)
@@ -27,10 +27,26 @@ implementation
 
 { TSoundThread }
 procedure TSoundThread.Execute;
+var
+  dpy: PDisplay;
 begin
+  {$IFDEF WINDOWS}
   Sound(5000);
   Delay(1000);
   NoSound;
+  {$ENDIF}
+  {$IFDEF UNIX}
+  dpy:=XOpenDisplay(nil);
+  try
+     XSynchronize(dpy,1);
+     XBell(dpy,0);
+     XFlush(dpy);
+     //xkblib.XkbForceBell(dpy,1000);
+     XCloseDisplay(dpy);
+  finally
+    XCloseDisplay(dpy);
+  end;
+  {$ENDIF}
 end;
 
 { TAlarm }
