@@ -56,10 +56,7 @@ end;
 
 procedure TAlarm.OnTimer(Sender: TObject);
 begin
-  //TSoundThread.Create(False);
-  Sound(5000);
-  Delay(1000);
-  NoSound;
+  TSoundThread.Create(False);
   ShowMessage('Time to check ICMs');
 end;
 
