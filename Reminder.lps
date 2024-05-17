@@ -32,7 +32,7 @@
         <UnitName Value="SoundAlarm"/>
         <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <CursorPos X="55" Y="8"/>
+        <CursorPos X="14" Y="12"/>
         <UsageCount Value="24"/>
         <Loaded Value="True"/>
       </Unit>
@@ -44,7 +44,7 @@
         <UsageCount Value="10"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="16">
+    <JumpHistory HistoryIndex="19">
       <Position>
         <Filename Value="mainform.pas"/>
         <Caret Column="14"/>
@@ -113,20 +113,34 @@
         <Filename Value="soundalarm.pas"/>
         <Caret Line="47" Column="4" TopLine="25"/>
       </Position>
+      <Position>
+        <Filename Value="soundalarm.pas"/>
+        <Caret Line="8" Column="8"/>
+      </Position>
+      <Position>
+        <Filename Value="soundalarm.pas"/>
+        <Caret Line="10" Column="11"/>
+      </Position>
+      <Position>
+        <Filename Value="soundalarm.pas"/>
+        <Caret Line="34" Column="16" TopLine="17"/>
+      </Position>
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>
       <Modes ActiveMode="default">
         <Mode Name="default">
           <local>
-            <LaunchingApplication Use="True" PathPlusParams="/usr/bin/gnome-terminal -t &apos;Lazarus Run Output&apos; -e &apos;$(LazarusDir)/tools/runwait.sh $(TargetCmdLine)&apos;"/>
+            <LaunchingApplication PathPlusParams="/usr/bin/gnome-terminal -t &apos;Lazarus Run Output&apos; -e &apos;$(LazarusDir)/tools/runwait.sh $(TargetCmdLine)&apos;"/>
           </local>
         </Mode>
       </Modes>
     </RunParams>
     <HistoryLists>
-      <List Name="LaunchingApplication" Type="File" Count="1">
-        <Item1 Value="/usr/bin/gnome-terminal -t &apos;Lazarus Run Output&apos; -e &apos;$(LazarusDir)/tools/runwait.sh $(TargetCmdLine)&apos;"/>
+      <List Name="LaunchingApplication" Type="File" Count="3">
+        <Item1 Value="\usr\bin\gnome-terminal -t &apos;Lazarus Run Output&apos; -e &apos;$(LazarusDir)\tools\runwait.sh $(TargetCmdLine)&apos;"/>
+        <Item2 Value="/usr/bin/gnome-terminal -t &apos;Lazarus Run Output&apos; -e &apos;$(LazarusDir)/tools/runwait.sh $(TargetCmdLine)&apos;"/>
+        <Item3 Value="C:\Windows\system32\cmd.exe /C ${TargetCmdLine}"/>
       </List>
       <List Name="WorkingDirectory" Type="File" Count="1"/>
       <List Name="CommandLineParameters" Count="1"/>

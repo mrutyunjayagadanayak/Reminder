@@ -5,7 +5,10 @@ unit SoundAlarm;
 interface
 
 uses
-  Classes, SysUtils, crt, DateUtils, ExtCtrls, Dialogs,xlib;
+  {$IFDEF UNIX}
+  xlib,
+  {$ENDIF}
+  Classes, SysUtils, crt, DateUtils, ExtCtrls, Dialogs;
 
 type
   TSoundThread = class (TThread)
@@ -27,8 +30,10 @@ implementation
 
 { TSoundThread }
 procedure TSoundThread.Execute;
+{$IFDEF UNIX}
 var
   dpy: PDisplay;
+  {$ENDIF}
 begin
   {$IFDEF WINDOWS}
   Sound(5000);
