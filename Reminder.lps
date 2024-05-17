@@ -32,7 +32,8 @@
         <UnitName Value="SoundAlarm"/>
         <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <CursorPos X="14" Y="12"/>
+        <TopLine Value="29"/>
+        <CursorPos Y="12"/>
         <UsageCount Value="24"/>
         <Loaded Value="True"/>
       </Unit>
